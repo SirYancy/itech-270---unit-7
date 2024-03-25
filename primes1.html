@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+
+        <h1>This is the Prime Tester</h1>
+        <p>The number you entered is:</p>
+
+        <script>
+            var numToTest = prompt("Enter an integer greater than 0");
+            var counter = 0;
+            counter += numToTest % 2 == 0 && numToTest != 2 ? 1 : 0;
+            counter += numToTest % 3 == 0 && numToTest != 3 ? 1 : 0;
+            counter += numToTest % 5 == 0 && numToTest != 5 ? 1 : 0;
+            counter += numToTest % 7 == 0 && numToTest != 7 ? 1 : 0;
+            counter += numToTest % 11 == 0 && numToTest != 11 ? 1 : 0;
+            counter += numToTest % 13 == 0 && numToTest != 13 ? 1 : 0;
+            counter += numToTest % 17 == 0 && numToTest != 17 ? 1 : 0;
+            counter += numToTest % 19 == 0 && numToTest != 19 ? 1 : 0;
+            counter += numToTest % 23 == 0 && numToTest != 23 ? 1 : 0;
+            counter += numToTest % 29 == 0 && numToTest != 29 ? 1 : 0;
+            counter += numToTest % 31 == 0 && numToTest != 31 ? 1 : 0;
+
+            document.write(counter > 0 ? "Not prime" : "Prime");
+        </script>
+
+    </body>
+</html>

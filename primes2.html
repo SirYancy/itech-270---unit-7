@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>FIND SOME PRIMES!</h1>
+    <script>
+        var x = prompt("Enter an integer greater than one.");
+        var counter = 0;
+        var n = 2;
+        while (x > n) {
+            if(x % n == 0){
+                counter++;
+            }
+            n++;
+        }
+        document.write(counter == 0 ? "Prime number." : "Not a prime number.");
+    </script>
+    
+</body>
+</html>
